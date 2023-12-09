@@ -12,4 +12,4 @@ def two_positive_numbers(a, b, c):
         print("false")
 
 
-two_positive_numbers(1, -2, 3)
+two_positive_numbers(-1, -2, -3)
