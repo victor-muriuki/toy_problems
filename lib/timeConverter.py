@@ -7,8 +7,8 @@ def convert_to_24_hour_format(hour, minute, period):
         hour = hour + 12
         #checks whether the input data is correct i.e period input can only be am or pm
         #restricts minutes from being higher than 60
-    elif period.lower() not in ["am", "pm"] or minute >= 60:
-        print("invalid time")
+    elif period.lower() not in ["am", "pm"] and minute >= 60 and hour <= 12:
+        # print("invalid time")
         return None
    #creates a variable to store time as a string, with each argument having a minimum of 2 integers
     time_24_hour_format = "{:02d}{:02d}".format(hour, minute)
@@ -16,12 +16,12 @@ def convert_to_24_hour_format(hour, minute, period):
     
     return time_24_hour_format
 
-print(convert_to_24_hour_format(11, 75, "pm"))
+# print(convert_to_24_hour_format(11, 75, "am"))
 
 
-# hour = 3
-# minute = 70
-# period = "pm"
-# result = convert_to_24_hour_format(hour, minute, period)
-# print(result)
+hour = 47
+minute = 8
+period = "am"
+result = convert_to_24_hour_format(hour, minute, period)
+print(result)
 
