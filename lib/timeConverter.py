@@ -16,12 +16,12 @@ def convert_to_24_hour_format(hour, minute, period):
     
     return time_24_hour_format
 
-# print(convert_to_24_hour_format(11, 75, "am"))
+print(convert_to_24_hour_format(11, 75, "pm"))
 
 
-hour = 3
-minute = 70
-period = "pm"
-result = convert_to_24_hour_format(hour, minute, period)
-print(result)
+# hour = 3
+# minute = 70
+# period = "pm"
+# result = convert_to_24_hour_format(hour, minute, period)
+# print(result)
 

@@ -1,17 +1,21 @@
 def two_positive_numbers(a, b, c):
     #checks whether only 2 argurments are positve
     if a > 0 and b > 0 and c > 0:
-        print("false")
+        return False
     elif a > 0 and b > 0 and c < 0:
-        print("true")
+       return True
     elif a > 0 and b < 0 and c > 0:
-        print("true")
+        return True
     elif a < 0 and b > 0 and c > 0:
-        print("true")
+        return True
     elif a < 0 and b < 0 and c < 0:
-        print("false")
+        return False
 
 
-two_positive_numbers(-1, -2, -3)
+# two_positive_numbers(-1, -2, -3)
 
-
+a = 1
+b = 2
+c = -4
+result = two_positive_numbers(a, b, c)
+print(result)
