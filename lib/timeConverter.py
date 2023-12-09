@@ -12,7 +12,7 @@ def convert_to_24_hour_format(hour, minute, period):
         return None
    #creates a variable to store time as a string, with each argument having a minimum of 2 integers
     time_24_hour_format = "{:02d}{:02d}".format(hour, minute)
-
+   
     
     return time_24_hour_format
 
