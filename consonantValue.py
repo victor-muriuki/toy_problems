@@ -12,7 +12,7 @@ def highest_consonant_value(s):
 
     return max(max_value, current_value)
 
-# Example usage:
+
 input_string = "fjiopsc"
 result = highest_consonant_value(input_string)
 print(result)
